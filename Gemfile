@@ -16,7 +16,6 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 # ログイン機能
 gem "devise"
-
 # 日本語化対応
 gem "devise-i18n"
 gem "rails-i18n", "~> 6.0"
