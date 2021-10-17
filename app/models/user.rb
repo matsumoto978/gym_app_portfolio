@@ -13,7 +13,8 @@ class User < ApplicationRecord
   
   has_many :gyms, dependent: :destroy
   has_many :likes, dependent: :destroy
-  
+  has_many :liked_gyms, through: :likes, source: :gym
+
   validates :name, uniqueness: true, presence: true
   validates :profile, length: { maximum: 200 }
   validates :email, { uniqueness: { case_sensitive: false } }
