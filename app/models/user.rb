@@ -10,6 +10,10 @@ class User < ApplicationRecord
       user.name = "ゲスト"
     end
   end
+  
+  has_many :gyms, dependent: :destroy
+  has_many :likes, dependent: :destroy
+  has_many :liked_gyms, through: :likes, source: :gym
 
   validates :name, uniqueness: true, presence: true
   validates :profile, length: { maximum: 200 }

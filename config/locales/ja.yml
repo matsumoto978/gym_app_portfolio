@@ -1,0 +1,29 @@
+ja:
+  activerecord:
+    models:
+      gym: 施設
+      like: いいね
+      comment: コメント
+      keep: 保存
+      user: ユーザー
+    attributes:
+      gym:
+        gyma_name: 施設名
+        user: ユーザー
+　　　　 latitude: 緯度
+        longitude: 経度
+        adress: 住所
+      like:
+        user: ユーザー
+        gym: 施設
+      comment:
+        user: ユーザー
+        gym: 施設
+        content: 内容
+      keep:
+        user: ユーザー
+        gym: 施設
+      user:
+        name: 名前
+        email: メールアドレス
+        passsword: パスワード
