@@ -28,6 +28,6 @@ class GymsController < ApplicationController
   private
 
   def gym_params
-    paramas.require(:gym).permit(:gym_name, :address, :content)
+    params.require(:gym).permit(:gym_name, :address, :content)
   end
 end
